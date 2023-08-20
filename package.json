@@ -41,13 +41,16 @@
     "url": "https://github.com/mahmudunnabikajal/datatable-axios/issues"
   },
   "homepage": "https://github.com/mahmudunnabikajal/datatable-axios#readme",
-  "devDependencies": {
-    "vite": "^4.4.9"
+  "peerDependencies": {
+    "axios": "*"
   },
-  "dependencies": {
+  "devDependencies": {
+    "vite": "^4.4.9",
     "@rollup/plugin-commonjs": "^25.0.4",
     "@rollup/plugin-node-resolve": "^15.2.0",
-    "axios": "^1.4.0",
     "rollup": "^3.28.0"
+  },
+  "dependencies": {
+    "axios": "^1.4.0"
   }
 }
