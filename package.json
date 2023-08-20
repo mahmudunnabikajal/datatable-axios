@@ -1,0 +1,34 @@
+{
+  "name": "datatable-axios",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahmudunnabikajal/datatable-axios.git"
+  },
+  "keywords": [
+    "datatable",
+    "datatable-axios",
+    "DataTables",
+    "DataTable",
+    "table",
+    "grid",
+    "filter",
+    "sort",
+    "page",
+    "javascript-plugin"
+  ],
+  "author": "Mahmudun Nabi Kajal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mahmudunnabikajal/datatable-axios/issues"
+  },
+  "homepage": "https://github.com/mahmudunnabikajal/datatable-axios#readme",
+  "devDependencies": {
+    "vite": "^4.4.9"
+  }
+}
