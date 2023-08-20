@@ -3,7 +3,7 @@ import commonjs from '@rollup/plugin-commonjs'
 import resolve from '@rollup/plugin-node-resolve'
 
 export default {
-    input: 'src/index.js', // Adjust your entry point
+    input: 'src/index.js',
     output: [
         {
             file: 'dist/datatable-axios.cjs.js',
@@ -18,10 +18,10 @@ export default {
             format: 'umd',
             name: 'datatable-axios',
             globals: {
-                axios: 'axios', // Provide the global name for axios
+                axios: 'axios'
             },
         },
     ],
     plugins: [resolve(), commonjs()],
-    external: ['axios'], // Add any external dependencies
+    external: ['axios']
 }

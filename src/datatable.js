@@ -1,56 +1,83 @@
+// Import the axios instance from the local file "./axios"
 import axios from "./axios"
-// Create a URLSearchParams object to parse the query string
+
+// Parse the search parameters from the URL
 const searchParams = new URLSearchParams(window.location.search)
-
-// Get individual query parameter values
-
 
 class datatable {
     constructor() {
-        // this.page = router.currentRoute.value.query.page
-        // this.paginate = router.currentRoute.value.query.paginate
-        // this.search = router.currentRoute.value.query.search
+
     }
+
+    // Method to perform a GET request
     async get(url) {
-        // const page = router.currentRoute.value.query.page
-        // const paginate = router.currentRoute.value.query.paginate
-        // const search = router.currentRoute.value.query.search
+        // Retrieve values from search parameters
         const page = searchParams.get('page')
         const paginate = searchParams.get('paginate')
         const search = searchParams.get('search')
 
+        // Return a Promise that resolves when the request completes
         return new Promise(async (resolve) => {
             if (!page && !paginate && !search) {
+                // If no search parameters, make a regular GET request
                 await window.axios.get(url).then(response => {
-                    resolve(response)
+                    resolve(response) // Resolve the Promise with the response
                 })
             } else {
+                // If search parameters exist, append them to the URL
                 await window.axios.get(`${url}?page=${page}&paginate=${paginate}&search=${search}`).then(response => {
-                    resolve(response)
+                    resolve(response) // Resolve the Promise with the response
                 })
             }
         })
     }
+
+    // Method to perform a POST request
     async post(url) {
-        // const page = router.currentRoute.value.query.page
-        // const paginate = router.currentRoute.value.query.paginate
-        // const search = router.currentRoute.value.query.search
+        // Retrieve values from search parameters
         const page = searchParams.get('page')
         const paginate = searchParams.get('paginate')
         const search = searchParams.get('search')
 
+        // Return a Promise that resolves when the request completes
         return new Promise(async (resolve) => {
             if (!page && !paginate && !search) {
+                // If no search parameters, make a regular POST request
                 await window.axios.post(url).then(response => {
-                    resolve(response)
+                    resolve(response) // Resolve the Promise with the response
                 })
             } else {
+                // If search parameters exist, append them to the URL
                 await window.axios.post(`${url}?page=${page}&paginate=${paginate}&search=${search}`).then(response => {
-                    resolve(response)
+                    resolve(response) // Resolve the Promise with the response
+                })
+            }
+        })
+    }
+
+    // Method to perform a PUT request
+    async put(url) {
+        // Retrieve values from search parameters
+        const page = searchParams.get('page')
+        const paginate = searchParams.get('paginate')
+        const search = searchParams.get('search')
+
+        // Return a Promise that resolves when the request completes
+        return new Promise(async (resolve) => {
+            if (!page && !paginate && !search) {
+                // If no search parameters, make a regular PUT request
+                await window.axios.put(url).then(response => {
+                    resolve(response) // Resolve the Promise with the response
+                })
+            } else {
+                // If search parameters exist, append them to the URL
+                await window.axios.put(`${url}?page=${page}&paginate=${paginate}&search=${search}`).then(response => {
+                    resolve(response) // Resolve the Promise with the response
                 })
             }
         })
     }
 }
-// const datatableAxios = new datatable()
+
+// Export the "datatable" class as the default export
 export default datatable

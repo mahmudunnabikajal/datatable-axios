@@ -4,10 +4,10 @@ export default {
             entry: 'src/index.js',
             name: 'datatable-axios'
         }, rollupOptions: {
-            external: ['axios'], // Add any external dependencies
+            external: ['axios'],
             output: {
                 globals: {
-                    axios: 'axios', // Specify the global variable name for axios
+                    axios: 'axios'
                 },
             },
         },
