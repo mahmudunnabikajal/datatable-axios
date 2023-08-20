@@ -1,7 +1,7 @@
 {
   "name": "datatable-axios",
   "version": "0.0.1",
-  "description": "",
+  "description": "A powerful npm package for effortless datatable interactions with seamless Axios calls. Effortlessly integrate search, paginate, and pagination functionalities into your projects with ease.",
   "main": "index.js",
   "type": "module",
   "repository": {
@@ -18,7 +18,10 @@
     "filter",
     "sort",
     "page",
-    "javascript-plugin"
+    "javascript-plugin",
+    "vite",
+    "npm",
+    "package"
   ],
   "author": "Mahmudun Nabi Kajal",
   "license": "ISC",

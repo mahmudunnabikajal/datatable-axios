@@ -51,5 +51,5 @@ class datatable {
         })
     }
 }
-const datatableAxios = new datatable()
-export default datatableAxios
+// const datatableAxios = new datatable()
+export default datatable
