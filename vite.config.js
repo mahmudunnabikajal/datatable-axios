@@ -1,7 +1,7 @@
 export default {
     build: {
         lib: {
-            entry: './index.js',
+            entry: 'src/index.js',
             name: 'datatable-axios'
         }
     }
