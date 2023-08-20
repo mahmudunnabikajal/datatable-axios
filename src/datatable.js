@@ -1,3 +1,4 @@
+import axios from "./axios"
 // Create a URLSearchParams object to parse the query string
 const searchParams = new URLSearchParams(window.location.search)
 
