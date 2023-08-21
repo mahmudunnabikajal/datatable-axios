@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datatable Axios Documentation</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+    <style>
+        .language-js {
+            font-family: 'Fira Code', monospace;
+        }
+
+        .language-js {
+            font-family: 'Fira Code', monospace;
+        }
+
+        pre {
+            overflow-x: auto;
+            margin-bottom: 10px;
+        }
+
+        pre.language-js {
+            background-color: #f5f5f5;
+            border: 1px solid #ddd;
+            max-width: 100%;
+            overflow-x: auto;
+        }
+
+        .active-link {
+            color: #3182ce;
+            /* Blue color for active link */
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 font-sans">
+    <nav class="z-50 shadow-lg sticky top-0 flex items-center justify-between bg-gray-800 p-4 md:hidden">
+        <div>
+            <a href="./index.html" class="text-white">Datatable Axios</a>
+        </div>
+        <div>
+            <button id="sidebarToggle" class="p-2 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+    <div class="flex">
+        <aside id="sidebar" class="bg-gray-800 text-white w-1/2 md:w-1/4 min-h-screen p-4 hidden md:block">
+            <div class="sticky top-10">
+                <h1 class="text-3xl font-semibold mb-4 hidden md:block">Datatable Axios </h1>
+                <nav>
+                    <ul>
+                        <li><a href="#installation" class="nav-link hover:text-blue-500">Installation</a></li>
+                        <li><a href="#why-datatable-axios" class="nav-link hover:text-blue-500">Why Datatable Axios?</a></li>
+                        <li><a href="#usage" class="nav-link hover:text-blue-500">Usage</a></li>
+                        <li><a href="#use-of-api-url" class="nav-link hover:text-blue-500">Use of API URL</a></li>
+                        <li><a href="#use-of-http-requests" class="nav-link hover:text-blue-500">Use of HTTP Requests</a></li>
+                        <li><a href="#example-of-http-call" class="nav-link hover:text-blue-500">Example of HTTP Call</a></li>
+                        <li><a href="#contributing" class="nav-link hover:text-blue-500">Contributing</a></li>
+                        <li><a href="#license" class="nav-link hover:text-blue-500">License</a></li>
+                        <li><a href="#author" class="nav-link hover:text-blue-500">Author</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <!-- Main content -->
+        <div class="w-full md:w-3/4 p-1">
+            <div class="bg-white rounded-lg shadow-lg p-2">
+                <div class="h-screen grid place-items-center justify-center content-center">
+                    <h1 class="text-3xl font-semibold mb-4">Datatable Axios Documentation</h1>
+                    <!-- Badge -->
+                    <div class="flex gap-2 mb-5 mt-5">
+                        <a href="https://github.com/mahmudunnabikajal/datatable-axios">
+                            <img src="https://img.shields.io/static/v1?label=mahmudunnabikajal&message=datatable-axios&color=blue&logo=github" alt="mahmudunnabikajal - datatable-axios">
+                        </a>
+                        <a href="https://www.npmjs.com/package/datatable-axios">
+                            <img src="https://img.shields.io/npm/dt/datatable-axios.svg" alt="Latest Stable Version">
+                        </a>
+                        <a href="https://www.npmjs.com/package/datatable-axios">
+                            <img src="https://img.shields.io/npm/v/datatable-axios.svg" alt="NPM Downloads">
+                        </a>
+                        <a href="https://www.npmjs.com/package/datatable-axios">
+                            <img src="https://img.shields.io/badge/License-MIT-blue" alt="License">
+                        </a>
+                    </div>
+                    <p class="text-center">Datatable Axios is a simple and convenient npm package that helps you make GET, POST, and PUT requests with ease, while handling search parameters and pagination seamlessly. It's built on top of the popular Axios library, making it reliable and efficient for your data fetching needs.</p>
+                    <a href="#installation" class="py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 mt-5">Get Started</a>
+                </div>
+
+                <!-- Installation -->
+                <section id="installation" class="mb-8">
+                    <h2 class="text-2xl font-semibold mb-2">Installation</h2>
+                    <pre class="bg-gray-200 rounded p-2"><code class="language-bash">npm install datatable-axios</code></pre>
+                </section>
+                <!-- Why Datatable Axios? -->
+                <section id="why-datatable-axios" class="mb-8">
+                    <h2 class="text-2xl font-semibold mb-2">Why Datatable Axios?</h2>
+                    <p class="mb-4">Simplify your <code class="bg-gray-200 rounded p-1">HTTP calls without repetition</code>. Say goodbye to repeating steps for every datatable request!</p>
+                    <h3 class="text-lg font-semibold mb-1">Cons:</h3>
+                    <pre class="bg-gray-200 rounded p-2"><code class="language-js">const response = await axios.get('http://example.com/api/v1/products?page=2&paginate=25&search=we');
+console.log(response.data);</code></pre>
+                    <h3 class="text-lg font-semibold mb-1">Pros:</h3>
+                    <pre class="bg-gray-200 rounded p-2"><code class="language-js">const response = await datatable.get('products');
+console.log(response.data);</code></pre>
+                </section>
+                <!-- Usage -->
+                <section id="usage" class="mb-8">
+                    <h2 class="text-2xl font-semibold mb-2">Usage</h2>
+                    <p class="mb-4">To get started with Datatable Axios, follow these simple steps:</p>
+                    <pre class="bg-gray-200 rounded p-2"><code class="language-js">import axios from "axios"
+
+// Make the axios library globally available on the window object
+window.axios = axios
+// Set your base API URL for seamless requests
+window.axios.defaults.baseURL = "http://example.com/api/v1/"
+
+// Other configuration here </code></pre>
+                    <p class="mb-4">Import the package at the top of your JavaScript file:</p>
+                    <pre class="bg-gray-200 rounded p-2"><code class="language-js">import datatable from 'datatable-axios'</code></pre>
+                    <p class="mb-4">Initialize an instance of the Datatable class:</p>
+                    <pre class="bg-gray-200 rounded p-2"><code class="language-js">const datatable = new Datatable();</code></pre>
+                </section>
+                <!-- Use of API URL -->
+                <section id="use-of-api-url" class="mb-8">
+                    <h2 class="text-2xl font-semibold mb-2">Use of API URL</h2>
+                    <p class="mb-4">When you have a global <code class="bg-gray-200 rounded p-1">axios.js</code> configuration setting with baseURL, simplify calls API by using just the path:</p>
+                    <pre class="bg-gray-200 rounded p-2"><code class="language-js">const response = await datatable.get('products');
+console.log(response.data);</code></pre>
+                    <p class="mb-4">If you're not utilizing a global <code class="bg-gray-200 rounded p-1">axios.js</code> configuration for with baseURL, include the full URL when making API calls:</p>
+                    <pre class="bg-gray-200 rounded p-2"><code class="language-js">const response = await datatable.get('http://example.com/api/v1/products');
+console.log(response.data);</code></pre>
+                </section>
+                <!-- Use of HTTP Requests -->
+                <section id="use-of-http-requests" class="mb-8">
+                    <h2 class="text-2xl font-semibold mb-2">Use of HTTP Requests</h2>
+                    <p class="mb-4">Perform different types of HTTP requests with Datatable Axios:</p>
+                    <h3 class="text-lg font-semibold mb-1">Perform a GET request:</h3>
+                    <pre class="bg-gray-200 rounded p-2"><code class="language-js">const response = await datatable.get('url or path');
+console.log(response.data); // Display the fetched data</code></pre>
+                    <h3 class="text-lg font-semibold mb-1">Perform a POST request:</h3>
+                    <pre class="bg-gray-200 rounded p-2"><code class="language-js">const response = await datatable.post('url or path');
+console.log(response.data); // Display the response data</code></pre>
+                    <h3 class="text-lg font-semibold mb-1">Perform a PUT request:</h3>
+                    <pre class="bg-gray-200 rounded p-2"><code class="language-js">const response = await datatable.put('url or path');
+console.log(response.data); // Display the updated data</code></pre>
+                </section>
+                <!-- Example of HTTP Call -->
+                <section id="example-of-http-call" class="mb-8">
+                    <h2 class="text-2xl font-semibold mb-2">Example of HTTP Call</h2>
+                    <h3 class="text-lg font-semibold mb-1">Example 1:</h3>
+                    <pre class="bg-gray-200 rounded p-2"><code class="language-js">datatable.get('http://example.com/api/v1/products')
+.then(response => {
+  console.log("Data fetched successfully:", response.data);
+})
+.catch(error => {
+  console.error("An error occurred:", error);
+});</code></pre>
+                    <h3 class="text-lg font-semibold mb-1">Example 2:</h3>
+                    <pre class="bg-gray-200 rounded p-2"><code class="language-js">try {
+  const response = await datatable.get('/api/v1/products');
+  console.log("Data fetched successfully:", response.data);
+} catch (error) {
+  console.error("An error occurred:", error);
+}</code></pre>
+                </section>
+                <!-- Contributing -->
+                <section id="contributing" class="mb-8">
+                    <h2 class="text-2xl font-semibold mb-2">Contributing</h2>
+                    <p class="mb-4">We welcome contributions to enhance Datatable Axios! Feel free to open issues for bug reports or feature requests. If you'd like to contribute code, please fork the repository, make your changes, and submit a pull request.</p>
+                </section>
+                <!-- License -->
+                <section id="license" class="mb-8">
+                    <h2 class="text-2xl font-semibold mb-2">License</h2>
+                    <p class="mb-4">Released under <a href="../LICENSE">MIT License</a> by <a href="https://github.com/mahmudunnabikajal">@mahmudunnabikajal</a>.</p>
+                </section>
+                <!-- Author -->
+                <section id="author">
+                    <h2 class="text-2xl font-semibold mb-2">Author</h2>
+                    <p class="mb-4">Mahmudun Nabi Kajal</p>
+                    <p>Contact: <a class="underline text-blue-400" href="https://www.linkedin.com/in/mahmudun-nabi-kajal/">Linkedin</a>, <a class="underline text-blue-400" href="https://github.com/mahmudunnabikajal">GitHub</a>, <a class="underline text-blue-400" href="mailto:mahmudunnabikajal">Gmail</a></p>
+                    <p>Feel free to reach out to me for any questions or feedback! I hope Datatable Axios simplifies your data fetching process for your datatable.</p>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-js-extras.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-bash.min.js"></script>
+    <script>
+        const sidebarToggle = document.getElementById('sidebarToggle')
+        const sidebar = document.getElementById('sidebar')
+
+        sidebarToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('hidden')
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(window).on("scroll", function () {
+                var scrollDistance = $(window).scrollTop()
+                $("section").each(function (i) {
+                    if ($(this).position().top <= scrollDistance) {
+                        $(".nav-link.active-link").removeClass("active-link")
+                        $(".nav-link").eq(i).addClass("active-link")
+                    }
+                })
+            })
+        });
+    </script>
+</body>
+
+</html>

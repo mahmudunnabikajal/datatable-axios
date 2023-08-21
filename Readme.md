@@ -3,7 +3,7 @@
 [![Latest Stable Version](https://img.shields.io/npm/v/datatable-axios.svg)](https://www.npmjs.com/package/datatable-axios)
 [![NPM Downloads](https://img.shields.io/npm/dt/datatable-axios.svg)](https://www.npmjs.com/package/datatable-axios)
 [![License](https://img.shields.io/badge/License-MIT-blue)](#license)
-<!-- [![Documentation](https://img.shields.io/badge/Documentation-blue)](/docs/ "Go to project documentation") -->
+<!-- [![Documentation](https://img.shields.io/badge/Documentation-blue)](./docs/index.html "Go to project documentation") -->
 
 
 Datatable Axios is a simple and convenient npm package that helps you make GET, POST, and PUT requests with ease, while handling search parameters and pagination seamlessly. It's built on top of the popular Axios library, making it reliable and efficient for your data fetching needs.
