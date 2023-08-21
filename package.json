@@ -39,7 +39,7 @@
     "package"
   ],
   "author": "Mahmudun Nabi Kajal",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/mahmudunnabikajal/datatable-axios/issues"
   },
