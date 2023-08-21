@@ -53,12 +53,12 @@ const datatable = new Datatable();
 &nbsp;
 # Use of API URL:
 
-- When you have a global `axios.js` configuration setting your baseURL, simplify your API calls by using just the path:
+- When you have a global `axios.js` configuration setting with baseURL, simplify calls API by using just the path:
 ```js
 const response = await datatable.get('products');
 console.log(response.data);
 ```
-- If you're not utilizing a global `axios.js` configuration for your baseURL, include the full URL when making API calls:
+- If you're not utilizing a global `axios.js` configuration for with baseURL, include the full URL when making API calls:
 ```js
 const response = await datatable.get('http://example.com/api/v1/products');
 console.log(response.data);
