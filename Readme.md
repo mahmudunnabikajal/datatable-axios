@@ -46,7 +46,7 @@ console.log(response.data);
 ```
 - If you're not utilizing a global `axios.js` configuration for your baseURL, include the full URL when making API calls:
 ```js
-const response = await datatable.get('url or path');
+const response = await datatable.get('http://example.com/api/v1/products');
 console.log(response.data);
 ```
 &nbsp;
