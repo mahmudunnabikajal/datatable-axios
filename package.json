@@ -5,7 +5,7 @@
   "type": "module",
   "main": "dist/datatable-axios.cjs.js",
   "unpkg": "dist/datatable-axios.umd.js",
-  "jsdelivr": "dist/simple-datatables.umd.js",
+  "jsdelivr": "dist/datatable-axios.umd.js",
   "exports": {
     ".": {
       "import": "./dist/datatable-axios.esm.js",
