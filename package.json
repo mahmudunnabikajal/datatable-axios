@@ -43,7 +43,7 @@
   "bugs": {
     "url": "https://github.com/mahmudunnabikajal/datatable-axios/issues"
   },
-  "homepage": "https://github.com/mahmudunnabikajal/datatable-axios#readme",
+  "homepage": "https://mahmudunnabikajal.github.io/datatable-axios/",
   "peerDependencies": {
     "axios": "*"
   },
