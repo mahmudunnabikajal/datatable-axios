@@ -1,4 +1,9 @@
 # Datatable Axios
+[![mahmudunnabikajal - datatable-axios](https://img.shields.io/static/v1?label=mahmudunnabikajal&message=datatable-axios&color=blue&logo=github)](https://github.com/mahmudunnabikajal/datatable-axios "Go to GitHub repo")
+[![Latest Stable Version](https://img.shields.io/npm/v/datatable-axios.svg)](https://www.npmjs.com/package/datatable-axios)
+[![NPM Downloads](https://img.shields.io/npm/dt/datatable-axios.svg)](https://www.npmjs.com/package/datatable-axios)
+[![License](https://img.shields.io/badge/License-MIT-blue)](#license)
+<!-- [![Documentation](https://img.shields.io/badge/Documentation-blue)](/docs/ "Go to project documentation") -->
 
 
 Datatable Axios is a simple and convenient npm package that helps you make GET, POST, and PUT requests with ease, while handling search parameters and pagination seamlessly. It's built on top of the popular Axios library, making it reliable and efficient for your data fetching needs.
@@ -122,8 +127,11 @@ We welcome contributions to enhance Datatable Axios! Feel free to open issues fo
 
 &nbsp;
 # License
-Datatable Axios is released under the [MIT License](https://opensource.org/license/mit/).
+Released under [MIT License](LICENSE) by [@mahmudunnabikajal](https://github.com/mahmudunnabikajal).
 
 &nbsp;
+# Author
+Mahmudun Nabi Kajal<br />
+Contact:  [Linkedin](https://www.linkedin.com/in/mahmudun-nabi-kajal/), [GitHub](https://github.com/mahmudunnabikajal), [Gmail](mailto:mahmudunnabikajal)
 
-Feel free to reach out to me [Linkedin](https://www.linkedin.com/in/mahmudun-nabi-kajal/), [GitHub](https://github.com/mahmudunnabikajal), [Gmail](mailto:mahmudunnabikajal) for any questions or feedback! I hope Datatable Axios simplifies your data fetching process.
+Feel free to reach out to me for any questions or feedback! I hope Datatable Axios simplifies your data fetching process for your datatable.
