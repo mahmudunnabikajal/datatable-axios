@@ -1,6 +1,6 @@
 {
   "name": "datatable-axios",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "A powerful npm package for effortless datatable interactions with seamless Axios calls. Effortlessly integrate search, paginate, and pagination functionalities into your projects with ease.",
   "type": "module",
   "main": "dist/datatable-axios.cjs.js",
