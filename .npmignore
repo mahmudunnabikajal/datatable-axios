@@ -3,4 +3,3 @@ src
 docs
 rollup.config.js
 vite.config.js
-.npmrc
