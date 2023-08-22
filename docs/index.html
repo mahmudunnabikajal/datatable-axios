@@ -27,6 +27,7 @@
     <!-- Links -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.6.1/toastify.min.css" rel="stylesheet">
     <style>
         .language-js {
             font-family: 'Fira Code', monospace;
@@ -34,6 +35,10 @@
 
         .language-js {
             font-family: 'Fira Code', monospace;
+        }
+
+        .copy-btn {
+            cursor: pointer;
         }
 
         pre {
@@ -117,24 +122,24 @@
                 <!-- Installation -->
                 <section id="installation" class="mb-8">
                     <h2 class="text-2xl font-semibold mb-2">Installation</h2>
-                    <pre class="bg-gray-200 rounded p-2"><code class="language-bash">npm install -g datatable-axios</code></pre>
+                    <pre class="copy-btn bg-gray-200 rounded p-2"><code class="language-bash">npm install -g datatable-axios</code></pre>
                 </section>
                 <!-- Why Datatable Axios? -->
                 <section id="why-datatable-axios" class="mb-8">
                     <h2 class="text-2xl font-semibold mb-2">Why Datatable Axios?</h2>
                     <p class="mb-4">Simplify your <code class="bg-gray-200 rounded p-1">HTTP calls without repetition</code>. Say goodbye to repeating steps for every datatable request!</p>
                     <h3 class="text-lg font-semibold mb-1">Cons:</h3>
-                    <pre class="bg-gray-200 rounded p-2"><code class="language-js">const response = await axios.get('http://example.com/api/v1/products?page=2&paginate=25&search=we');
+                    <pre class="copy-btn bg-gray-200 rounded p-2"><code class="language-js">const response = await axios.get('http://example.com/api/v1/products?page=2&paginate=25&search=we');
 console.log(response.data);</code></pre>
                     <h3 class="text-lg font-semibold mb-1">Pros:</h3>
-                    <pre class="bg-gray-200 rounded p-2"><code class="language-js">const response = await datatable.get('products');
+                    <pre class="copy-btn bg-gray-200 rounded p-2"><code class="language-js">const response = await datatable.get('products');
 console.log(response.data);</code></pre>
                 </section>
                 <!-- Usage -->
                 <section id="usage" class="mb-8">
                     <h2 class="text-2xl font-semibold mb-2">Usage</h2>
                     <p class="mb-4">To get started with Datatable Axios, follow these simple steps:</p>
-                    <pre class="bg-gray-200 rounded p-2"><code class="language-js">import axios from "axios"
+                    <pre class="copy-btn bg-gray-200 rounded p-2"><code class="language-js">import axios from "axios"
 
 // Make the axios library globally available on the window object
 window.axios = axios
@@ -143,18 +148,18 @@ window.axios.defaults.baseURL = "http://example.com/api/v1/"
 
 // Other configuration here </code></pre>
                     <p class="mb-4">Import the package at the top of your JavaScript file:</p>
-                    <pre class="bg-gray-200 rounded p-2"><code class="language-js">import datatable from 'datatable-axios'</code></pre>
+                    <pre class="copy-btn bg-gray-200 rounded p-2"><code class="language-js">import datatable from 'datatable-axios'</code></pre>
                     <p class="mb-4">Initialize an instance of the Datatable class:</p>
-                    <pre class="bg-gray-200 rounded p-2"><code class="language-js">const datatable = new Datatable();</code></pre>
+                    <pre class="copy-btn bg-gray-200 rounded p-2"><code class="language-js">const datatable = new Datatable();</code></pre>
                 </section>
                 <!-- Use of API URL -->
                 <section id="use-of-api-url" class="mb-8">
                     <h2 class="text-2xl font-semibold mb-2">Use of API URL</h2>
                     <p class="mb-4">When you have a global <code class="bg-gray-200 rounded p-1">axios.js</code> configuration setting with baseURL, simplify calls API by using just the path:</p>
-                    <pre class="bg-gray-200 rounded p-2"><code class="language-js">const response = await datatable.get('products');
+                    <pre class="copy-btn bg-gray-200 rounded p-2"><code class="language-js">const response = await datatable.get('products');
 console.log(response.data);</code></pre>
                     <p class="mb-4">If you're not utilizing a global <code class="bg-gray-200 rounded p-1">axios.js</code> configuration for with baseURL, include the full URL when making API calls:</p>
-                    <pre class="bg-gray-200 rounded p-2"><code class="language-js">const response = await datatable.get('http://example.com/api/v1/products');
+                    <pre class="copy-btn bg-gray-200 rounded p-2"><code class="language-js">const response = await datatable.get('http://example.com/api/v1/products');
 console.log(response.data);</code></pre>
                 </section>
                 <!-- Use of HTTP Requests -->
@@ -162,20 +167,20 @@ console.log(response.data);</code></pre>
                     <h2 class="text-2xl font-semibold mb-2">Use of HTTP Requests</h2>
                     <p class="mb-4">Perform different types of HTTP requests with Datatable Axios:</p>
                     <h3 class="text-lg font-semibold mb-1">Perform a GET request:</h3>
-                    <pre class="bg-gray-200 rounded p-2"><code class="language-js">const response = await datatable.get('url or path');
+                    <pre class="copy-btn bg-gray-200 rounded p-2"><code class="language-js">const response = await datatable.get('url or path');
 console.log(response.data); // Display the fetched data</code></pre>
                     <h3 class="text-lg font-semibold mb-1">Perform a POST request:</h3>
-                    <pre class="bg-gray-200 rounded p-2"><code class="language-js">const response = await datatable.post('url or path');
+                    <pre class="copy-btn bg-gray-200 rounded p-2"><code class="language-js">const response = await datatable.post('url or path');
 console.log(response.data); // Display the response data</code></pre>
                     <h3 class="text-lg font-semibold mb-1">Perform a PUT request:</h3>
-                    <pre class="bg-gray-200 rounded p-2"><code class="language-js">const response = await datatable.put('url or path');
+                    <pre class="copy-btn bg-gray-200 rounded p-2"><code class="language-js">const response = await datatable.put('url or path');
 console.log(response.data); // Display the updated data</code></pre>
                 </section>
                 <!-- Example of HTTP Call -->
                 <section id="example-of-http-call" class="mb-8">
                     <h2 class="text-2xl font-semibold mb-2">Example of HTTP Call</h2>
                     <h3 class="text-lg font-semibold mb-1">Example 1:</h3>
-                    <pre class="bg-gray-200 rounded p-2"><code class="language-js">datatable.get('http://example.com/api/v1/products')
+                    <pre class="copy-btn bg-gray-200 rounded p-2"><code class="language-js">datatable.get('http://example.com/api/v1/products')
 .then(response => {
   console.log("Data fetched successfully:", response.data);
 })
@@ -183,7 +188,7 @@ console.log(response.data); // Display the updated data</code></pre>
   console.error("An error occurred:", error);
 });</code></pre>
                     <h3 class="text-lg font-semibold mb-1">Example 2:</h3>
-                    <pre class="bg-gray-200 rounded p-2"><code class="language-js">try {
+                    <pre class="copy-btn bg-gray-200 rounded p-2"><code class="language-js">try {
   const response = await datatable.get('/api/v1/products');
   console.log("Data fetched successfully:", response.data);
 } catch (error) {
@@ -216,6 +221,7 @@ console.log(response.data); // Display the updated data</code></pre>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-js-extras.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-bash.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.6.1/toastify.min.js"></script>
     <script>
         const sidebarToggle = document.getElementById('sidebarToggle')
         const sidebar = document.getElementById('sidebar')
@@ -226,6 +232,17 @@ console.log(response.data); // Display the updated data</code></pre>
     </script>
     <script>
         $(document).ready(function () {
+            function showCopiedNotification(text) {
+                Toastify({
+                    text: text,
+                    duration: 1500,
+                    newWindow: true,
+                    close: true,
+                    gravity: "top",
+                    positionLeft: false,
+                    backgroundColor: "#4CAF50",
+                }).showToast()
+            }
             $(window).on("scroll", function () {
                 var scrollDistance = $(window).scrollTop()
                 $("section").each(function (i) {
@@ -234,6 +251,16 @@ console.log(response.data); // Display the updated data</code></pre>
                         $(".nav-link").eq(i).addClass("active-link")
                     }
                 })
+            })
+            $(".copy-btn").on("click", function () {
+                const codeBlock = $(this).prev("pre").find("code").text()
+                navigator.clipboard.writeText(codeBlock)
+                    .then(function () {
+                        showCopiedNotification("Code copied to clipboard!")
+                    })
+                    .catch(function (error) {
+                        showCopiedNotification("Failed to copy code to clipboard:", error)
+                    })
             })
         });
     </script>
