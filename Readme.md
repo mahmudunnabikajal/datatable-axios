@@ -132,6 +132,6 @@ Released under [MIT License](LICENSE) by [@mahmudunnabikajal](https://github.com
 &nbsp;
 # Author
 Mahmudun Nabi Kajal<br />
-Contact:  [Linkedin](https://www.linkedin.com/in/mahmudun-nabi-kajal/), [GitHub](https://github.com/mahmudunnabikajal), [Gmail](mailto:mahmudunnabikajal)
+Contact:  [Linkedin](https://www.linkedin.com/in/mahmudun-nabi-kajal/), [GitHub](https://github.com/mahmudunnabikajal), [Gmail](mailto:mahmudunnabikajal), [Website](http://mahmudunnabikajal.com/)
 
 Feel free to reach out to me for any questions or feedback! I hope Datatable Axios simplifies your data fetching process for your datatable.
