@@ -19,12 +19,12 @@ npm install -g datatable-axios
 # Why Datatable Axios?
 Simplify your `HTTP calls without repetition`. Say goodbye to repeating steps for every datatable request!
 
-- **`Cons:`** Without using the library, you can achieve the same functionality in Axios which `isn't readable & reusable`.
+- **`Cons:`** Without using the library, you can achieve the same functionality in Axios which ***isn't readable & reusable***.
 ```js
 const response = await axios.get('http://example.com/api/v1/products?page=2&paginate=25&search=we');
 console.log(response.data);
 ```
-- **`Pros:`** After using this library, you can achieve the same functionality of Axios in a `readable & reusable way`
+- **`Pros:`** After using this library, you can achieve the same functionality of Axios in a ***readable & reusable way***
 ```js
 const response = await datatable.get('products');
 console.log(response.data);
