@@ -3,3 +3,5 @@ src
 docs
 rollup.config.js
 vite.config.js
+.vscode
+docs/.vscode
