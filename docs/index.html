@@ -124,17 +124,21 @@
                     <h2 class="text-2xl font-semibold mb-2">Installation</h2>
                     <pre class="copy-btn bg-gray-200 rounded p-2"><code class="language-bash">npm install -g datatable-axios</code></pre>
                 </section>
+                <hr class="mb-4">
                 <!-- Why Datatable Axios? -->
                 <section id="why-datatable-axios" class="mb-8">
                     <h2 class="text-2xl font-semibold mb-2">Why Datatable Axios?</h2>
                     <p class="mb-4">Simplify your <code class="bg-gray-200 rounded p-1">HTTP calls without repetition</code>. Say goodbye to repeating steps for every datatable request!</p>
                     <h3 class="text-lg font-semibold mb-1">Cons:</h3>
+                    <p class="text-sm mb-4">Without using the library, you can achieve the same functionality in Axios which isn't readable & reusable</p>
                     <pre class="copy-btn bg-gray-200 rounded p-2"><code class="language-js">const response = await axios.get('http://example.com/api/v1/products?page=2&paginate=25&search=we');
 console.log(response.data);</code></pre>
                     <h3 class="text-lg font-semibold mb-1">Pros:</h3>
+                    <p class="text-sm mb-4">After using this library, you can achieve the same functionality of Axios in a readable & reusable way</p>
                     <pre class="copy-btn bg-gray-200 rounded p-2"><code class="language-js">const response = await datatable.get('products');
 console.log(response.data);</code></pre>
                 </section>
+                <hr class="mb-4">
                 <!-- Usage -->
                 <section id="usage" class="mb-8">
                     <h2 class="text-2xl font-semibold mb-2">Usage</h2>
@@ -152,6 +156,7 @@ window.axios.defaults.baseURL = "http://example.com/api/v1/"
                     <p class="mb-4">Initialize an instance of the Datatable class:</p>
                     <pre class="copy-btn bg-gray-200 rounded p-2"><code class="language-js">const datatable = new Datatable();</code></pre>
                 </section>
+                <hr class="mb-4">
                 <!-- Use of API URL -->
                 <section id="use-of-api-url" class="mb-8">
                     <h2 class="text-2xl font-semibold mb-2">Use of API URL</h2>
@@ -162,6 +167,7 @@ console.log(response.data);</code></pre>
                     <pre class="copy-btn bg-gray-200 rounded p-2"><code class="language-js">const response = await datatable.get('http://example.com/api/v1/products');
 console.log(response.data);</code></pre>
                 </section>
+                <hr class="mb-4">
                 <!-- Use of HTTP Requests -->
                 <section id="use-of-http-requests" class="mb-8">
                     <h2 class="text-2xl font-semibold mb-2">Use of HTTP Requests</h2>
@@ -176,6 +182,7 @@ console.log(response.data); // Display the response data</code></pre>
                     <pre class="copy-btn bg-gray-200 rounded p-2"><code class="language-js">const response = await datatable.put('url or path');
 console.log(response.data); // Display the updated data</code></pre>
                 </section>
+                <hr class="mb-4">
                 <!-- Example of HTTP Call -->
                 <section id="example-of-http-call" class="mb-8">
                     <h2 class="text-2xl font-semibold mb-2">Example of HTTP Call</h2>
@@ -195,21 +202,24 @@ console.log(response.data); // Display the updated data</code></pre>
   console.error("An error occurred:", error);
 }</code></pre>
                 </section>
+                <hr class="mb-4">
                 <!-- Contributing -->
                 <section id="contributing" class="mb-8">
                     <h2 class="text-2xl font-semibold mb-2">Contributing</h2>
                     <p class="mb-4">We welcome contributions to enhance Datatable Axios! Feel free to open issues for bug reports or feature requests. If you'd like to contribute code, please fork the repository, make your changes, and submit a pull request.</p>
                 </section>
+                <hr class="mb-4">
                 <!-- License -->
                 <section id="license" class="mb-8">
                     <h2 class="text-2xl font-semibold mb-2">License</h2>
                     <p class="mb-4">Released under <a href="../LICENSE">MIT License</a> by <a href="https://github.com/mahmudunnabikajal">@mahmudunnabikajal</a>.</p>
                 </section>
+                <hr class="mb-4">
                 <!-- Author -->
                 <section id="author">
                     <h2 class="text-2xl font-semibold mb-2">Author</h2>
-                    <p class="mb-4">Mahmudun Nabi Kajal</p>
-                    <p>Contact: <a class="underline text-blue-400" href="https://www.linkedin.com/in/mahmudun-nabi-kajal/">Linkedin</a>, <a class="underline text-blue-400" href="https://github.com/mahmudunnabikajal">GitHub</a>, <a class="underline text-blue-400" href="mailto:mahmudunnabikajal">Gmail</a></p>
+                    <p>Mahmudun Nabi Kajal</p>
+                    <p class="mb-4">Contact: <a class="underline text-blue-400" href="https://www.linkedin.com/in/mahmudun-nabi-kajal/">Linkedin</a>, <a class="underline text-blue-400" href="https://github.com/mahmudunnabikajal">GitHub</a>, <a class="underline text-blue-400" href="mailto:mahmudunnabikajal">Gmail</a>, <a class="underline text-blue-400" href="http://mahmudunnabikajal.com/">Website</a></p>
                     <p>Feel free to reach out to me for any questions or feedback! I hope Datatable Axios simplifies your data fetching process for your datatable.</p>
                 </section>
             </div>
