@@ -2,7 +2,7 @@
 import axios from "./axios"
 
 // Parse the search parameters from the URL
-const searchParams = new URLSearchParams(window.location.search)
+let searchParams = new URLSearchParams(window.location.search)
 
 class datatable {
     constructor() {
@@ -12,9 +12,9 @@ class datatable {
     // Method to perform a GET request
     async get(url) {
         // Retrieve values from search parameters
-        const page = searchParams.get('page')
-        const paginate = searchParams.get('paginate')
-        const search = searchParams.get('search')
+        let page = searchParams.get('page')
+        let paginate = searchParams.get('paginate')
+        let search = searchParams.get('search')
 
         // Return a Promise that resolves when the request completes
         return new Promise(async (resolve) => {
@@ -35,9 +35,9 @@ class datatable {
     // Method to perform a POST request
     async post(url) {
         // Retrieve values from search parameters
-        const page = searchParams.get('page')
-        const paginate = searchParams.get('paginate')
-        const search = searchParams.get('search')
+        let page = searchParams.get('page')
+        let paginate = searchParams.get('paginate')
+        let search = searchParams.get('search')
 
         // Return a Promise that resolves when the request completes
         return new Promise(async (resolve) => {
@@ -58,9 +58,9 @@ class datatable {
     // Method to perform a PUT request
     async put(url) {
         // Retrieve values from search parameters
-        const page = searchParams.get('page')
-        const paginate = searchParams.get('paginate')
-        const search = searchParams.get('search')
+        let page = searchParams.get('page')
+        let paginate = searchParams.get('paginate')
+        let search = searchParams.get('search')
 
         // Return a Promise that resolves when the request completes
         return new Promise(async (resolve) => {
