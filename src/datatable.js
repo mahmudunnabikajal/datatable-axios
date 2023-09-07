@@ -1,9 +1,6 @@
 // Import the axios instance from the local file "./axios"
 import axios from "./axios"
 
-// Parse the search parameters from the URL
-let searchParams = new URLSearchParams(window.location.search)
-
 class datatable {
     constructor() {
 
@@ -11,6 +8,9 @@ class datatable {
 
     // Method to perform a GET request
     async get(url) {
+        // Parse the search parameters from the URL
+        let searchParams = new URLSearchParams(window.location.search)
+
         // Retrieve values from search parameters
         let page = searchParams.get('page')
         let paginate = searchParams.get('paginate')
@@ -34,6 +34,9 @@ class datatable {
 
     // Method to perform a POST request
     async post(url) {
+        // Parse the search parameters from the URL
+        let searchParams = new URLSearchParams(window.location.search)
+
         // Retrieve values from search parameters
         let page = searchParams.get('page')
         let paginate = searchParams.get('paginate')
@@ -57,6 +60,9 @@ class datatable {
 
     // Method to perform a PUT request
     async put(url) {
+        // Parse the search parameters from the URL
+        let searchParams = new URLSearchParams(window.location.search)
+
         // Retrieve values from search parameters
         let page = searchParams.get('page')
         let paginate = searchParams.get('paginate')
