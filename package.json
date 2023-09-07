@@ -13,9 +13,9 @@
     }
   },
   "scripts": {
+    "build:rollup": "rollup -c",
     "build": "npm run build:rollup",
-    "build:vite": "vite build",
-    "build:rollup": "rollup -c"
+    "publish": "npm run build && npm publish"
   },
   "repository": {
     "type": "git",
