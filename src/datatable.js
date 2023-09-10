@@ -1,12 +1,20 @@
 // Import the axios instance from the local file "./axios"
 import axios from "./axios"
 
+/**
+ * A datatable-axios class
+ * @class
+ */
 class datatable {
     constructor() {
 
     }
 
-    // Method to perform a GET request
+    /**
+     * Method to perform a GET request
+     * @param {string} url - The url of API endpoint
+     * @returns {Promise<object>} Server response from API endpoint
+     */
     async get(url) {
         // Parse the search parameters from the URL
         let searchParams = new URLSearchParams(window.location.search)
@@ -32,7 +40,13 @@ class datatable {
         })
     }
 
-    // Method to perform a POST request
+    /**
+     * Method to perform a POST request
+     * 
+     * @async
+     * @param {string} url - The url of API endpoint
+     * @returns {Promise<object>} Server response from API endpoint
+     */
     async post(url) {
         // Parse the search parameters from the URL
         let searchParams = new URLSearchParams(window.location.search)
@@ -58,7 +72,13 @@ class datatable {
         })
     }
 
-    // Method to perform a PUT request
+    /**
+     * Method to perform a PUT request
+     * 
+     * @async
+     * @param {string} url - The url of API endpoint
+     * @returns {Promise<object>} Server response from API endpoint
+     */
     async put(url) {
         // Parse the search parameters from the URL
         let searchParams = new URLSearchParams(window.location.search)
