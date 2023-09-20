@@ -13,7 +13,7 @@ Datatable Axios is a simple and convenient npm package that helps you make GET, 
 You can install Datatable Axios using npm:
 
 ```bash
-npm install -g datatable-axios
+npm install datatable-axios
 ```
 &nbsp;
 # Why Datatable Axios?
