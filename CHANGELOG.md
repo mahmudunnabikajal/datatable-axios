@@ -3,6 +3,19 @@
 All notable changes to this project are documented in this file. Format is
 based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.0.0] - 2026-09-06
+
+Modernization relaunch — no public API changes.
+
+- Add ESLint + Prettier configuration.
+- Add unit tests (`node:test`) covering `get`/`post`/`put` with and without
+  `page`/`paginate`/`search` query parameters.
+- Add GitHub Actions workflows for CI/publish and SonarCloud analysis.
+- Add semantic-release configuration for automated npm publishing.
+- Simplify `datatable.js` request methods to return the underlying
+  `window.axios` promise directly instead of wrapping it in a redundant
+  `new Promise(async ...)` executor (behavior unchanged).
+
 ## [0.0.11] - 2023-09-07
 
 Note: not published to npm (latest published version is 0.0.10); dated from
