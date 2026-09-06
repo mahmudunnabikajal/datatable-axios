@@ -1,6 +1,6 @@
 {
   "name": "datatable-axios",
-  "version": "0.0.11",
+  "version": "1.0.0",
   "description": "A powerful npm package for effortless datatable interactions with seamless Axios calls. Effortlessly integrate search, paginate, and pagination functionalities into your projects with ease.",
   "type": "module",
   "main": "dist/datatable-axios.cjs.js",
@@ -15,7 +15,14 @@
   "scripts": {
     "build:rollup": "rollup -c",
     "build": "npm run build:rollup",
-    "publish": "npm run build && npm publish"
+    "prepublishOnly": "npm run build",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "node --test",
+    "test:coverage": "node --test --experimental-test-coverage --test-reporter=lcov --test-reporter-destination=lcov.info",
+    "update:deps": "npx npm-check-updates -i --format group"
   },
   "repository": {
     "type": "git",
@@ -51,7 +58,19 @@
     "vite": "^4.4.9",
     "@rollup/plugin-commonjs": "^25.0.4",
     "@rollup/plugin-node-resolve": "^15.2.0",
-    "rollup": "^3.28.0"
+    "rollup": "^3.28.0",
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.10.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.6",
+    "globals": "^17.12.0",
+    "prettier": "^3.9.6",
+    "semantic-release": "^25.0.9",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^12.0.9",
+    "@semantic-release/npm": "^13.1.5",
+    "@semantic-release/release-notes-generator": "^14.1.1"
   },
   "dependencies": {
     "axios": "^1.4.0"
