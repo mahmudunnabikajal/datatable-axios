@@ -15,7 +15,11 @@
   "scripts": {
     "build:rollup": "rollup -c",
     "build": "npm run build:rollup",
-    "publish": "npm run build && npm publish"
+    "publish": "npm run build && npm publish",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "repository": {
     "type": "git",
@@ -51,7 +55,13 @@
     "vite": "^4.4.9",
     "@rollup/plugin-commonjs": "^25.0.4",
     "@rollup/plugin-node-resolve": "^15.2.0",
-    "rollup": "^3.28.0"
+    "rollup": "^3.28.0",
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.10.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.6",
+    "globals": "^17.12.0",
+    "prettier": "^3.9.6"
   },
   "dependencies": {
     "axios": "^1.4.0"
