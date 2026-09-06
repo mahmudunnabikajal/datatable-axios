@@ -6,11 +6,16 @@
 [![License](https://img.shields.io/badge/License-MIT-blue)](#license)
 [![Documentation](https://img.shields.io/badge/Documentation-blue)](https://mahmudunnabikajal.github.io/datatable-axios/ "Go to project documentation")
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=mahmudunnabikajal_datatable-axios&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=mahmudunnabikajal_datatable-axios)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=mahmudunnabikajal_datatable-axios&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=mahmudunnabikajal_datatable-axios)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=mahmudunnabikajal_datatable-axios&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=mahmudunnabikajal_datatable-axios)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=mahmudunnabikajal_datatable-axios&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=mahmudunnabikajal_datatable-axios)
+
 Datatable Axios is a simple and convenient npm package that helps you make GET, POST, and PUT requests with ease, while handling search parameters and pagination seamlessly. It's built on top of the popular Axios library, making it reliable and efficient for your data fetching needs.
 
 &nbsp;
 
-# Installation
+## Installation
 
 You can install Datatable Axios using npm:
 
@@ -20,7 +25,7 @@ npm install datatable-axios
 
 &nbsp;
 
-# Why Datatable Axios?
+## Why Datatable Axios?
 
 Simplify your `HTTP calls without repetition`. Say goodbye to repeating steps for every datatable request!
 
@@ -40,7 +45,7 @@ console.log(response.data);
 
 &nbsp;
 
-# Usage
+## Usage
 
 To get started with Datatable Axios, follow these simple steps:
 
@@ -71,7 +76,7 @@ const datatable = new Datatable();
 
 &nbsp;
 
-# Use of API URL:
+## Use of API URL
 
 - When you have a global `axios.js` configuration setting with baseURL, simplify calls API by using just the path:
 
@@ -80,7 +85,7 @@ const response = await datatable.get("products");
 console.log(response.data);
 ```
 
-- If you're not utilizing a global `axios.js` configuration for with baseURL, include the full URL when making API calls:
+- If you're not utilizing a global `axios.js` configuration with baseURL, include the full URL when making API calls:
 
 ```js
 const response = await datatable.get("http://example.com/api/v1/products");
@@ -89,7 +94,7 @@ console.log(response.data);
 
 &nbsp;
 
-# Use of HTTP requests:
+## Use of HTTP requests
 
 - Perform a GET request:
 
@@ -114,7 +119,7 @@ console.log(response.data); // Display the updated data
 
 &nbsp;
 
-# Example of HTTP call:
+## Example of HTTP call
 
 - Example 1 :
 
@@ -141,36 +146,40 @@ try {
 ```
 
 **`Note:`** Similar usage for POST and PUT requests
-<!-- # Advanced Usage
+
+&nbsp;
+
+## Advanced Usage
+
 You can also pass search parameters, pagination, and search queries to your requests:
 
 ```js
 // Append search parameters to the URL
-const response = await datatable.get('https://api.example.com/data', {
+const response = await datatable.get("https://api.example.com/data", {
   page: 1,
   paginate: 10,
-  search: 'keyword',
+  search: "keyword",
 });
 console.log(response.data);
-``` -->
+```
 
 &nbsp;
 
-# Contributing
+## Contributing
 
 We welcome contributions to enhance Datatable Axios! Feel free to open issues for bug reports or feature requests. If you'd like to contribute code, please fork the repository, make your changes, and submit a pull request.
 
 &nbsp;
 
-# License
+## License
 
 Released under [MIT License](LICENSE) by [@mahmudunnabikajal](https://github.com/mahmudunnabikajal).
 
 &nbsp;
 
-# Author
+## Author
 
 Mahmudun Nabi Kajal<br />
-Contact: [Linkedin](https://www.linkedin.com/in/mahmudun-nabi-kajal/), [GitHub](https://github.com/mahmudunnabikajal), [Gmail](mailto:mahmudunnabikajal), [Website](http://mahmudunnabikajal.com/)
+Contact: [Linkedin](https://www.linkedin.com/in/mahmudun-nabi-kajal/), [GitHub](https://github.com/mahmudunnabikajal), [Website](http://mahmudunnabikajal.com/)
 
 Feel free to reach out to me for any questions or feedback! I hope Datatable Axios simplifies your data fetching process for your datatable.
