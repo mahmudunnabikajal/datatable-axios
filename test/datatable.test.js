@@ -89,4 +89,20 @@ describe("datatable", () => {
       ]);
     });
   });
+
+  describe("with only a single search param present", () => {
+    beforeEach(() => {
+      setupWindow(
+        "?page=3",
+        mockAxios((method, url) => calls.push({ method, url })),
+      );
+    });
+
+    test("get() appends query params with nulls for missing params", async () => {
+      await dt.get("/api/items");
+      assert.deepStrictEqual(calls, [
+        { method: "get", url: "/api/items?page=3&paginate=null&search=null" },
+      ]);
+    });
+  });
 });
