@@ -1,4 +1,12 @@
 /**
+ * @file datatable.js
+ * @module datatable-axios/datatable
+ * @description Provides the `datatable` class, a thin wrapper around Axios that
+ * automatically forwards the current URL's `page`, `paginate`, and `search`
+ * query parameters to the target API endpoint for GET, POST, and PUT requests.
+ */
+
+/**
  * A datatable-axios class
  * @class
  */

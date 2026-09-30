@@ -1,3 +1,10 @@
+/**
+ * @file axios.js
+ * @module datatable-axios/axios
+ * @description Configures a shared Axios instance and exposes it globally so the
+ * datatable class can issue HTTP requests through `window.axios`.
+ */
+
 // Import the axios library
 import axios from "axios";
 
